@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" content>
+        <meta http-equiv="Content-Type" content="IE-edge">
+        <title>PokeDex LaunchX</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="title">
+                <div>
+                    <img src="./img/pokedex_title.png" alt="titulo" id="logo">
+                </div>
+                <div class="buscar">
+                    <input type="text" placeholder="pikachu" id="pokeName" class="inputs" name="pokeName"><br>
+                    <button onclick="fetchPokemon()" class="btn">Buscar Pokemon</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="container .direccion">
+            <div id="left">
+                <div id="numero">0</div>
+                <div id="nombre">""</div>
+                <div class="display">
+                    <img src="./img/pokeball.gif" alt="" id="pokeImg" width="150px"><br>
+                    <div id="tipo"></div>
+                </div>
+            </div>
+
+            <div id="right">
+                <table id="stats">
+                      <tr>
+                        <th>HGT<br></th>
+                        <th>WGT</th>
+                        <th>HP<br></th>
+                        <th>ATK</th>
+                      </tr>
+                    <tbody>
+                      <tr>
+                        <td id="stat1"></td>
+                        <td id="stat2"><br></td>
+                        <td id="stat3"></td>
+                        <td id="stat4"><br></td>
+                      </tr>
+                      <tr>
+                        <th>DEF</th>
+                        <th>S ATK</th>
+                        <th>S DEF</th>
+                        <th>SPD</th>
+                      </tr>
+                      <tr>
+                        <td id="stat5"></td>
+                        <td id = "stat6"></td>
+                        <td id = "stat7"></td>
+                        <td id = "stat8"></td>
+                      </tr>
+                    </tbody>
+                    </table>
+            
+                <div id="mov1"></div>
+                <div id="mov2"></div>
+
+            </div>
+
+        </div>
+    </body>
+    <footer>        
+        <script src="./pokedex.js"></script>
+    </footer>
+</html>

@@ -1,0 +1,280 @@
+/*body{
+    /*background-image: url("./img/poke_background.png") ,
+    radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center; 
+    background-size: contain;
+  
+}*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start; 
+    height: 100%;
+    background-color: lightblue;
+    opacity: .7;
+}
+
+
+.title{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+}
+
+#logo{
+    width: 500px;
+}
+
+.buscar{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    top: 10px;
+}
+
+.inputs{
+    
+    width: 240px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.inputs:hover{
+    box-shadow: 15px 0 15px #00a8ff;
+}
+
+.btn
+{
+  
+  margin: 40px 0;
+  width: 250px;
+  height: 50px;
+  border: none;
+  background-color: rgb(128, 170, 255);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  transition: .3s linear;
+}
+
+.btn:hover {
+    background-color: red;
+    transform: rotateY(-15deg);
+    box-shadow: 15px 0 15px #00a8ff;
+  }
+
+body{
+    min-width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-image: url("./img/background.png"),
+    radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background-repeat: no-repeat;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: flex-start; 
+    height: 100%;
+    
+}
+
+.direccion{
+    flex-direction: row;
+}
+
+.container div{
+    
+    padding: 0%;
+}
+
+#left{
+    background-image: url("./img/pokedex_left_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 380px;
+    
+}
+
+#nombre{
+    position: relative;
+    top: 60px;
+    left: 230px;
+}
+
+#numero{
+ position: relative;
+ font-size: bold;
+ left: 230px;
+ top:60px;
+}
+
+.display{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    left: 100px;
+    top:120px;
+}
+
+.pokeImg{
+    max-width: 100%;
+    height: auto;
+}
+
+#right{
+    background-image: url("./img/pokedex_right_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 320px;
+    height: 510px;
+
+}
+
+
+#stats{
+    padding: 18px;
+    /*background-color: yellow;*/
+    opacity: 0.7;
+    font-size: 14px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    text-align: center;
+}
+
+td{
+    padding-left:2px;
+}
+
+
+.stats div{
+    padding-left: 15px;
+}
+
+#tipo{
+    position: absolute;
+    top: 270px;
+    width: 100px;
+    height: 50px;
+}
+
+#mov1{
+    position: relative;
+    top: 320px;
+    left: 50px;
+}
+
+#mov2{
+    position: relative;
+    top: 301px;
+    left: 165px;
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+    body{
+        background-position: center-center;
+        background-repeat: repeat-y;
+    }
+
+    .title{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: flex-start; 
+        background-color: lightblue;
+        opacity: .7;
+        width:200px;
+    }
+
+    .direccion{
+        flex-direction:column;
+        }
+
+    
+      #left{
+        width:500px;
+        height:600px;
+        border-right:none;
+        background-image: url("./img/pokedex_left_1.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 300px;
+        }
+
+        #nombre{
+            position: relative;
+            top: 60px;
+            left: 300px;
+        }
+        
+        #numero{
+         position: relative;
+         font-size: bold;
+         left: 300px;
+         top:60px;
+        }
+
+        .display{
+            position: relative;
+            top: 165px;
+            left: 130px;
+        }   
+
+        #tipo{
+            position: relative;
+            top:160px;
+        }
+
+        #right{
+          width:440px;
+          height:350px;
+          margin-top: -210px;
+          left: -50px;
+          background-image: contain;
+          z-index: -1;
+          padding-bottom: 10px;
+        }
+
+        #stats{
+            position: relative;
+            top:220px;
+            left: 100px;
+    
+        }
+        
+        #mov1{
+            background-color: rgb(128, 170, 255);
+            position: relative;
+            top: 202px;
+            width: 100px;
+            left: 90px;
+            border-radius: 5px;
+        }
+        
+        #mov2{
+            width: 100px;
+            background-color: rgb(128, 170, 255);
+            position: relative;
+            top: 184px;
+            left: 200px;
+            border-radius: 5px;
+            
+        }
+
+
+}
