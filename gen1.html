@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" content>
+        <meta http-equiv="Content-Type" content="IE-edge">
+        <title>PokeDex LaunchX</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head>
+
+    <body class="gens">
+        <a href="./index.html">
+            <img src="./img/pokedex_title.png" alt="titulo" id="logo">
+        </a>
+        <script src="./pokedexGen.js"></script>
+        <button onclick="addElements(0,151)" class="btn">Gen I</button>
+        <button onclick="addElements(152,252)" class="btn">Gen II</button>
+        <button onclick="addElements(253,387)" class="btn">Gen III</button>
+        <button onclick="addElements(388,493)" class="btn">Gen IV</button>
+        <button onclick="addElements(494,649)" class="btn">Gen V</button>
+        <button onclick="addElements(650,721)" class="btn">Gen VI</button>
+        <button onclick="addElements(722,809)" class="btn">Gen VII</button>
+        <button onclick="addElements(810,905)" class="btn">GEN VIII</button>
+        <a href="./index.html" class="btn changePage">BACK</a>
+       <div id="fila">
+            <div id="div1" class="overflow-hidden"></div>
+          </div>
+
+        
+
+         <!--Optional JS--> 
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
